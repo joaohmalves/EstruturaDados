@@ -36,8 +36,12 @@ public class ListaLigada {
         if (this.primeiro == null && this.ultimo == null){
             this.primeiro = novoElemento;
             this.ultimo = novoElemento;
-            this.tamanho++;
         }
+        else {
+            this.ultimo.setProximo(novoElemento);
+            this.ultimo = novoElemento;
+        }
+        this.tamanho++;
     }
 
     public void remover(String novoValor){
@@ -45,8 +49,14 @@ public class ListaLigada {
     }
 
     public Elemento get(int posicao){
-        return null;
+        Elemento atual = this.primeiro;
+        for(int i=0; i<posicao;i++){
+            if (atual.getProximo()!=null){
+                atual = atual.getProximo();
+            }
     }
 
+        return atual;
+    }
 
 }
