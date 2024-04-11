@@ -42,6 +42,7 @@ public class ListaLigada {
             this.ultimo = novoElemento;
         }
         this.tamanho++;
+
     }
 
     public void remover(String novoValor){
