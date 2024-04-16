@@ -73,6 +73,7 @@ public class ListaLigada {
                 if (atual == primeiro && atual== ultimo){
                     this.primeiro = null;
                     this.ultimo = null;
+
                 }
                 //se o elemento removido for o primeiro, o primeiro vai se tornar o proximo do removido
                 else if(atual == primeiro){
